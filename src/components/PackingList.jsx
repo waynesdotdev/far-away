@@ -1,5 +1,13 @@
-import React from 'react'
+import Item from './Item'
 
-export default function PackingList() {
-  return <div className='list'>LIST</div>
+export default function PackingList({ initialItems }) {
+  return (
+    <div className='list'>
+      <ul>
+        {initialItems.map(item => (
+          <Item item={item} key={item.id} />
+        ))}
+      </ul>
+    </div>
+  )
 }
