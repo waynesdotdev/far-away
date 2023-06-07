@@ -1,11 +1,17 @@
+import Form from './components/Form'
 import Logo from './components/Logo'
 
-function App() {
+import React from 'react'
+import PackingList from './components/PackingList'
+import Stats from './components/Stats'
+
+export default function App() {
   return (
-    <div>
+    <div className='app'>
       <Logo />
+      <Form />
+      <PackingList />
+      <Stats />
     </div>
   )
 }
-
-export default App
